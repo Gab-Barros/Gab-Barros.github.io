@@ -241,10 +241,6 @@ header ul li a:hover::after {
   padding: 50px 0;
 }
 
-.certificados .wrapper {
-  overflow: hidden;
-}
-
 .certificados h1 {
   font-size: 2.25rem;
   padding: 50px 0;
@@ -271,6 +267,15 @@ header ul li a:hover::after {
   max-width: 800px;
   flex-shrink: 0;
   margin: 15px;
+}
+
+.wrapper-slide {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+  border: 1px solid red;
 }
 
 /*Projetos*/
