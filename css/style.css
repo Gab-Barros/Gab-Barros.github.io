@@ -87,7 +87,7 @@ header ul li a:hover::after {
   display: block;
   height: 4px;
   border-radius: 2px;
-  background: #f23d3d;
+  background: #43c2d9;
   margin-top: 20px;
   transition: 0.1s;
 }
@@ -158,7 +158,7 @@ header ul li a:hover::after {
 .capa-btn li:last-child a:hover {
   background: #43c2d9;
   border: 1px solid #43c2d9;
-  color: black;
+  color: white;
   transition: 0.1s;
 }
 
@@ -200,7 +200,7 @@ header ul li a:hover::after {
   border-bottom: 1px solid #43c2d9;
   background: #fff;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .skills-item img {
