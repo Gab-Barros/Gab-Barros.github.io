@@ -427,6 +427,8 @@ q::after {
 }
 
 /******************** JS *******************/
+
+/* Exclamação intermitente */
 .interr {
   color: #f23d3d;
 }
@@ -435,3 +437,29 @@ q::after {
   opacity: 0;
   transition: 0.1s;
 }
+
+/* Fade intro */
+[data-fade="titulo"].active {
+  animation: fadeInDown 0.8s;
+}
+
+[data-fade="paragrafo"].active {
+  animation: fadeInDown 1.6s;
+}
+
+[data-fade="btn"].active {
+  animation: fadeInDown 2.4s;
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+/* Fade Left Skills */
