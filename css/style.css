@@ -241,6 +241,10 @@ header ul li a:hover::after {
   padding: 50px 0;
 }
 
+.certificados .wrapper {
+  overflow: hidden;
+}
+
 .certificados h1 {
   font-size: 2.25rem;
   padding: 50px 0;
@@ -258,27 +262,15 @@ header ul li a:hover::after {
   margin-top: 20px;
 }
 
-.certificados-container {
-  color: white;
-}
-
-.certificados-row {
+.slide {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 30px;
 }
 
-.certificados-item {
-  margin: 20px;
-  flex: 1 1 300px;
-}
-
-.certificados h2 {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: normal;
-  text-align: center;
-  font-style: italic;
+.slide li {
+  width: 80vw;
+  max-width: 800px;
+  flex-shrink: 0;
+  margin: 15px;
 }
 
 /*Projetos*/
