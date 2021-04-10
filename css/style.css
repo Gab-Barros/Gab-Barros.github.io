@@ -156,8 +156,8 @@ header ul li a:hover::after {
 }
 
 .capa-btn li:last-child a:hover {
-  background: #dde848;
-  border: 1px solid #dde848;
+  background: #43c2d9;
+  border: 1px solid #43c2d9;
   color: black;
   transition: 0.1s;
 }
@@ -194,8 +194,11 @@ header ul li a:hover::after {
 .skills-item {
   flex-basis: 300px;
   padding: 20px;
-  border-top: 8px solid #dde848;
-  background: #fcf9f9;
+  border-top: 8px solid #43c2d9;
+  border-left: 1px solid #43c2d9;
+  border-right: 1px solid #43c2d9;
+  border-bottom: 1px solid #43c2d9;
+  background: #fff;
   border-radius: 5px;
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
@@ -218,7 +221,7 @@ header ul li a:hover::after {
   display: block;
   width: 100px;
   height: 2px;
-  background: #dde848;
+  background: #43c2d9;
   margin: 20px auto;
 }
 
@@ -333,7 +336,10 @@ header ul li a:hover::after {
 
 .projeto-info {
   border-top: 8px solid #f23d3d;
-  background: #fcf9f9;
+  border-left: 1px solid #f23d3d;
+  border-right: 1px solid #f23d3d;
+  border-bottom: 1px solid #f23d3d;
+  background: #fff;
   border-radius: 5px;
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
   margin-left: 20px;
@@ -413,7 +419,7 @@ q::after {
 
 .fab,
 .fas {
-  color: #dde848;
+  color: #43c2d9;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
@@ -439,16 +445,30 @@ q::after {
 }
 
 /* Fade intro */
+[data-fade="titulo"] {
+  opacity: 0;
+}
+
+[data-fade="paragrafo"] {
+  opacity: 0;
+}
+
+[data-fade="btn"] {
+  opacity: 0;
+}
+
 [data-fade="titulo"].active {
-  animation: fadeInDown 0.8s;
+  animation: fadeInDown 0.6s forwards;
 }
 
 [data-fade="paragrafo"].active {
-  animation: fadeInDown 1.6s;
+  animation: fadeInDown 0.8s forwards;
+  animation-delay: 0.4s;
 }
 
 [data-fade="btn"].active {
-  animation: fadeInDown 2.4s;
+  animation: fadeInDown 1.2s forwards;
+  animation-delay: 0.8s;
 }
 
 @keyframes fadeInDown {
@@ -463,3 +483,40 @@ q::after {
 }
 
 /* Fade Left Skills */
+
+[data-fadeInLeft="html"] {
+  opacity: 0;
+}
+
+[data-fadeInLeft="html"].active {
+  animation: fadeInLeft 0.6s forwards;
+}
+
+[data-fadeInLeft="css"] {
+  opacity: 0;
+}
+
+[data-fadeInLeft="css"].active {
+  animation: fadeInLeft 0.8s forwards;
+  animation-delay: 0.4s;
+}
+
+[data-fadeInLeft="js"] {
+  opacity: 0;
+}
+
+[data-fadeInLeft="js"].active {
+  animation: fadeInLeft 1.2s forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-180px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
