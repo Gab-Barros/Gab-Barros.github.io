@@ -99,7 +99,7 @@ header ul li a:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70vh;
+  height: 60vh;
 }
 
 .intro h1 {
