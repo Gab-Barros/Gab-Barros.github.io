@@ -261,21 +261,25 @@ header ul li a:hover::after {
 .slide {
   display: flex;
   border: 2px solid green;
+  transform: translate3d(0, 0, 0);
 }
 
 .slide li {
   width: 80vw;
   max-width: 800px;
   flex-shrink: 0;
-  margin: 15px;
+  margin: 0px 15px;
   margin: 4px solid purple;
+}
+
+.slide li img {
+  display: block;
+  max-width: 100%;
 }
 
 .wrapper-slide {
   max-width: 960px;
   margin: 0 auto;
-  padding-right: 10px;
-  padding-left: 10px;
   overflow: hidden;
   border: 1px solid red;
 }
