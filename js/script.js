@@ -335,6 +335,7 @@ function menuMobile() {
     outsideClick(event) {
       if (!this.list.contains(event.target)) {
         this.list.classList.remove("active");
+        this.button.classList.remove("active");
       }
     }
 

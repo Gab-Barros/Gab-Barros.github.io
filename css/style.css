@@ -171,10 +171,14 @@ header ul li a:hover::after {
   .intro p {
     font-size: 1.25rem;
   }
+  .capa-btn li {
+    margin: 8px;
+  }
   .capa-btn li a {
     display: block;
     margin: 0 auto;
     width: 340px;
+    padding: 10px;
   }
   .capa-btn {
     text-align: center;
@@ -186,11 +190,24 @@ header ul li a:hover::after {
 }
 
 @media (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding: 15px 0;
+  }
   .intro h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+  }
+  .intro p {
+    font-size: 1rem;
+  }
+  .capa-btn li {
+    margin: 5px;
   }
   .capa-btn li a {
-    width: 300px;
+    width: 260px;
+    padding: 10px;
   }
 }
 
@@ -380,7 +397,8 @@ header ul li a:hover::after {
   margin: 80px auto 20px auto;
   background: #f23d3d;
   border: 1px solid #f23d3d;
-  color: #222;
+  color: white;
+  letter-spacing: 0.1rem;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.1rem;
 }
