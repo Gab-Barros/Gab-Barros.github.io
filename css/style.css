@@ -260,6 +260,7 @@ header ul li a:hover::after {
 
 .slide {
   display: flex;
+  border: 2px solid green;
 }
 
 .slide li {
@@ -267,6 +268,7 @@ header ul li a:hover::after {
   max-width: 800px;
   flex-shrink: 0;
   margin: 15px;
+  margin: 4px solid purple;
 }
 
 .wrapper-slide {
