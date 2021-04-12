@@ -260,7 +260,6 @@ header ul li a:hover::after {
 
 .slide {
   display: flex;
-  border: 2px solid green;
   transform: translate3d(0, 0, 0);
 }
 
@@ -269,7 +268,6 @@ header ul li a:hover::after {
   max-width: 800px;
   flex-shrink: 0;
   margin: 0px 15px;
-  margin: 4px solid purple;
   border-radius: 4px;
   overflow: hidden;
   opacity: 0.8;
@@ -291,7 +289,6 @@ header ul li a:hover::after {
   max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 /*Projetos*/
@@ -532,4 +529,36 @@ q::after {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+/* Control Slide */
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #222;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 10px;
+  border: 1px solid #f23d3d;
+}
+
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #f23d3d;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 10px;
+  border: 1px solid #222;
 }
