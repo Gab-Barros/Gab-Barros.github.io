@@ -98,14 +98,15 @@ header ul li a:hover::after {
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 60vh;
+  justify-items: center;
+  height: 50vh;
 }
 
 .intro h1 {
   font-family: "IBM Plex Serif", serif;
   font-size: 3rem;
   max-width: 505px;
+  margin: 15px 0;
 }
 
 .intro h1::after {
