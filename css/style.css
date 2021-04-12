@@ -201,6 +201,7 @@ header ul li a:hover::after {
   }
   .intro p {
     font-size: 1rem;
+    margin-bottom: 25px;
   }
   .capa-btn li {
     margin: 5px;
@@ -418,12 +419,12 @@ header ul li a:hover::after {
   border-bottom: 1px solid #f23d3d;
   background: #fff;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   margin-left: 20px;
 }
 
 .projeto-img {
-  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 760px) {
