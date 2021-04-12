@@ -35,7 +35,8 @@ img {
 
 /* Main */
 main {
-  padding: 20px 0;
+  /* padding: 20px 0 100px 0; */
+  height: 100vh;
   background-image: url("../img/capa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,10 +96,10 @@ header ul li a:hover::after {
 /* Intro */
 
 .intro {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 70vh;
 }
 
 .intro h1 {
@@ -169,11 +170,6 @@ header ul li a:hover::after {
   .intro p {
     font-size: 1.25rem;
   }
-  .intro {
-    height: 100vh;
-    padding: 0px;
-  }
-
   .capa-btn li a {
     display: block;
     margin: 0 auto;
@@ -189,9 +185,6 @@ header ul li a:hover::after {
 }
 
 @media (max-width: 450px) {
-  .intro {
-    height: 50vh;
-  }
   .intro h1 {
     font-size: 1.75rem;
   }
