@@ -529,7 +529,7 @@ q::after {
 }
 
 [data-fadeInLeft="img"].active {
-  animation: fadeInLeft 0.3s forwards;
+  animation: fadeInLeft 0.6s forwards;
 }
 
 [data-fadeInLeft="info"] {
@@ -538,7 +538,7 @@ q::after {
 
 [data-fadeInLeft="info"].active {
   animation: fadeInLeft 0.6s forwards;
-  animation-delay: 0.6s;
+  animation-delay: 0.4s;
 }
 
 @keyframes fadeInLeft {
