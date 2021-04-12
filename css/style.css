@@ -201,7 +201,10 @@ header ul li a:hover::after {
   }
   .intro p {
     font-size: 1rem;
-    margin-bottom: 25px;
+  }
+  .intro ul {
+    border: 1px solid red;
+    margin-top: 20px;
   }
   .capa-btn li {
     margin: 5px;
