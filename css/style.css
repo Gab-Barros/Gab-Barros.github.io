@@ -584,7 +584,7 @@ q::after {
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
     right: 20px;
-    top: 110px;
+    top: 75px;
     border: 1px solid #43c2d9;
     z-index: 16;
   }
