@@ -190,7 +190,7 @@ header ul li a:hover::after {
 
 @media (max-width: 450px) {
   .intro {
-    height: 100vh;
+    height: 50vh;
   }
   .intro h1 {
     font-size: 1.75rem;
