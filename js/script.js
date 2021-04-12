@@ -312,7 +312,46 @@ function scrollsuave() {
     }
   }
 
-  const scrollSuave = new ScrollSuave('[href^="#"]');
+  const scrollSuave = new ScrollSuave('[href^="#"]', undefined);
   scrollSuave.init();
 }
 scrollsuave();
+
+// Menu Mobile
+function menuMobile() {
+  class MenuMobile {
+    constructor(button, list) {
+      this.button = document.querySelector('[data-menu="button"]');
+      this.list = document.querySelector('[data-menu="list"]');
+    }
+
+    toggleActiveClass(event) {
+      this.list.classList.toggle("active");
+      this.button.classList.toggle("active");
+      event.stopPropagation();
+      window.addEventListener("click", this.outsideClick);
+    }
+
+    outsideClick(event) {
+      if (!this.list.contains(event.target)) {
+        this.list.classList.remove("active");
+      }
+    }
+
+    addEvents() {
+      this.button.addEventListener("click", this.toggleActiveClass);
+    }
+
+    init() {
+      this.bindEvents();
+      this.addEvents();
+    }
+    bindEvents() {
+      this.toggleActiveClass = this.toggleActiveClass.bind(this);
+      this.outsideClick = this.outsideClick.bind(this);
+    }
+  }
+  const menumobile = new MenuMobile();
+  menumobile.init();
+}
+menuMobile();

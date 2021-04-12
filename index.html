@@ -14,7 +14,8 @@
   <main class="capa">
     <header class="wrapper">
       <h1 class="logo">&lt<span class="interr">!</span>--Barros--&gt</h1>
-      <ul>
+      <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+      <ul data-menu="list" id="menu">
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certificados">Certificados</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -33,9 +34,9 @@
     </section> 
   </section>
   </main>
-  <section class="skills wrapper" >
-    <h1 id="skills">Minhas Skills</h1>
-    <div class="skills-container">
+  <section class="skills" >
+    <h1 id="skills" class="wrapper">Minhas Skills</h1>
+    <div class="skills-container wrapper">
       <div class="skills-item" data-fadeInLeft="html">
         <img src="img/html.svg" alt="html logo">
         <h3>HTML</h3>
