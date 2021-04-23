@@ -188,11 +188,6 @@ header ul li a:hover::after {
   }
 }
 
-@media (min-width: 357px) and (max-width: 450px){
-  main{
-    height: 82vh
-  }
-}
 
 @media (max-width: 279px){
   .capa-btn{
