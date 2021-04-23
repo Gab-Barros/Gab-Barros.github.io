@@ -35,7 +35,6 @@ img {
 
 /* Main */
 main {
-  /* padding: 20px 0 100px 0; */
   height: 100vh;
   background-image: url("../img/capa.jpg");
   background-size: cover;
@@ -186,6 +185,18 @@ header ul li a:hover::after {
   .capa-btn li:last-child a {
     background: none;
     border: 1px solid #43c2d9;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 450px){
+  main{
+    height: 82vh
+  }
+}
+
+@media (max-width: 279px){
+  .capa-btn{
+    display:none;
   }
 }
 
@@ -670,7 +681,7 @@ q::after {
 
 [data-fadeInLeft="css"].active {
   animation: fadeInLeft 0.8s forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 [data-fadeInLeft="js"] {
@@ -678,8 +689,8 @@ q::after {
 }
 
 [data-fadeInLeft="js"].active {
-  animation: fadeInLeft 1.2s forwards;
-  animation-delay: 0.8s;
+  animation: fadeInLeft 1s forwards;
+  animation-delay: 0.6s;
 }
 
 [data-fadeInLeft="img"] {
